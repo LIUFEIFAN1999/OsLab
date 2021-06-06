@@ -13,10 +13,12 @@ public class Processor {
     ArrayList<PCB> waitList = new ArrayList<>();
     //当前运行进程
     PCB p;
+    //生产者、消费者生产、取出的产品
     String x1,x2,c1,c2;
     //生产者生产总数，当总数达到20，达到结束条件
     int count = 0;
     int s1, s2, PC;
+    //指针
     int in=0, out = 0;
     public String[] products = new String[10];
     public String[] PA = {"produce", "p(s1)", "put", "v(s2)", "goto0"},
